@@ -16,4 +16,9 @@ describe('Sudoku', function() {
       console.log(Sudoku);
       expect(sudokuCheck.AllRowCheck([1,2,3,4,5,6,7,8,9],[2,3,4,5,6,7,8,9,1],[3,4,5,6,7,8,9,1,2],[4,5,6,7,8,9,1,2,3],[5,6,7,8,9,1,2,3,4],[6,7,8,9,1,2,3,4,5],[7,8,9,1,2,3,4,5,6],[8,9,1,2,3,4,5,6,7],[9,1,2,3,4,5,6,7,8])).toEqual(true)
     });
+
+    it('should test whether a Sudoku first box is true', function() {
+      var sudokuCheck = new Sudoku()
+      expect(sudokuCheck.CheckBoxes([1,2,3,4,5,6,7,8,9],[4,5,6,7,8,9,1,2,3],[7,8,9,1,2,3,4,5,6])).toEqual(true)
+    });
 });

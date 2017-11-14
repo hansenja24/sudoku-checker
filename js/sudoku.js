@@ -53,4 +53,29 @@ Sudoku.prototype.AllRowCheck = function(row1, row2, row3, row4, row5, row6, row7
   return true;
 }
 
+Sudoku.prototype.CheckBoxes = function(row1, row2, row3){
+    var rowList = [row1, row2, row3];
+    box = [];
+
+    for(i = 0; i < 3; i++)
+    {
+      for(j = 0; j < 3; j++)
+      {
+        box.push(rowList[i][j]);
+      }
+    }
+    
+    for (i = 0; i < 9; i++)
+    {
+      for(j = i+1; j < 9; j++)
+      {
+        if(box[i] == box[j])
+        {
+          return false;
+        }
+      }
+    }
+    return true;
+}
+
 exports.sudokuModule = Sudoku;
