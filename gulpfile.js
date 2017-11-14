@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var utilities = require('gulp-util');
 var del = require('del');
+var babelify = require("babelify");
 var jshint = require('gulp-jshint');
 var lib = require('bower-files')({
   "overrides":{
@@ -25,12 +26,15 @@ gulp.task('myTask', function(){
   console.log('hello gulp');
 })
 
-gulp.task('jsBrowserify', ['concatInterface'], function(){
-  return browserify({entries:['./tmp/allConcat.js']})
-  .bundle()
-  .pipe(source('app.js'))
-  .pipe(gulp.dest('./build/js'))
-})
+gulp.task('jsBrowserify', ['concatInterface'], function() {
+  return browserify({ entries: ['./tmp/allConcat.js']})
+    .transform(babelify.configure({
+      presets: ["es2015"]
+    }))
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(gulp.dest('./build/js'))
+});
 
 gulp.task('concatInterface', function(){
   return gulp.src(['./js/*-interface.js'])

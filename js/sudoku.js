@@ -16,7 +16,7 @@ Sudoku.prototype.RowCheck =  function(num1, num2, num3, num4, num5, num6, num7, 
     }
   }
   return true;
-}
+};
 
 Sudoku.prototype.ColCheck =  function(num1, num2, num3, num4, num5, num6, num7, num8, num9){
   var numList = [num1, num2, num3, num4, num5, num6, num7, num8, num9];
@@ -32,7 +32,7 @@ Sudoku.prototype.ColCheck =  function(num1, num2, num3, num4, num5, num6, num7, 
     }
   }
   return true;
-}
+};
 
 Sudoku.prototype.AllRowCheck = function(row1, row2, row3, row4, row5, row6, row7, row8, row9){
   var rowList = [row1, row2, row3, row4, row5, row6, row7, row8, row9];
@@ -51,7 +51,7 @@ Sudoku.prototype.AllRowCheck = function(row1, row2, row3, row4, row5, row6, row7
     }
   }
   return true;
-}
+};
 
 Sudoku.prototype.CheckBoxes = function(row1, row2, row3, row4, row5, row6, row7, row8, row9){
     var rowList = [row1, row2, row3, row4, row5, row6, row7, row8, row9];
@@ -85,7 +85,7 @@ Sudoku.prototype.CheckBoxes = function(row1, row2, row3, row4, row5, row6, row7,
 
     }
     return true;
-}
+};
 
 Sudoku.prototype.CheckAll = function(row1, row2, row3, row4, row5, row6, row7, row8, row9){
   var rowList = [row1, row2, row3, row4, row5, row6, row7, row8, row9];
@@ -167,6 +167,6 @@ for(g = 0; g < 9; g++)
   }
   return true;
 
-}
+};
 
 exports.sudokuModule = Sudoku;
