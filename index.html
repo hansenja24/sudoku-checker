@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css" type="text/css">
+    <link rel="stylesheet" href="build/css/master.css" type="text/css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
     <meta charset="utf-8">
     <title>Sudoku Checker</title>
   </head>
@@ -17,101 +17,128 @@
         <div class="form-group">
           <label for="input">Write a sudoku</label>
               <br>
-              <input type="text" name="input" class="form-control" id="input1">
-              <input type="text" name="input" class="form-control" id="input2">
-              <input type="text" name="input" class="form-control" id="input3">
-              <input type="text" name="input" class="form-control" id="input4">
-              <input type="text" name="input" class="form-control" id="input5">
-              <input type="text" name="input" class="form-control" id="input6">
-              <input type="text" name="input" class="form-control" id="input7">
-              <input type="text" name="input" class="form-control" id="input8">
-              <input type="text" name="input" class="form-control" id="input9">
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input1">
+                <input type="text" name="input" class="form-control" id="input2">
+                <input type="text" name="input" class="form-control" id="input3">
+                <input type="text" name="input" class="form-control" id="input4">
+                <input type="text" name="input" class="form-control" id="input5">
+                <input type="text" name="input" class="form-control" id="input6">
+                <input type="text" name="input" class="form-control" id="input7">
+                <input type="text" name="input" class="form-control" id="input8">
+                <input type="text" name="input" class="form-control" id="input9">
+              </div>
               <br>
-              <input type="text" name="input" class="form-control" id="input10">
-              <input type="text" name="input" class="form-control" id="input11">
-              <input type="text" name="input" class="form-control" id="input12">
-              <input type="text" name="input" class="form-control" id="input13">
-              <input type="text" name="input" class="form-control" id="input14">
-              <input type="text" name="input" class="form-control" id="input15">
-              <input type="text" name="input" class="form-control" id="input16">
-              <input type="text" name="input" class="form-control" id="input17">
-              <input type="text" name="input" class="form-control" id="input18">
               <br>
-              <input type="text" name="input" class="form-control" id="input19">
-              <input type="text" name="input" class="form-control" id="input20">
-              <input type="text" name="input" class="form-control" id="input21">
-              <input type="text" name="input" class="form-control" id="input22">
-              <input type="text" name="input" class="form-control" id="input23">
-              <input type="text" name="input" class="form-control" id="input24">
-              <input type="text" name="input" class="form-control" id="input25">
-              <input type="text" name="input" class="form-control" id="input26">
-              <input type="text" name="input" class="form-control" id="input27">
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input10">
+                <input type="text" name="input" class="form-control" id="input11">
+                <input type="text" name="input" class="form-control" id="input12">
+                <input type="text" name="input" class="form-control" id="input13">
+                <input type="text" name="input" class="form-control" id="input14">
+                <input type="text" name="input" class="form-control" id="input15">
+                <input type="text" name="input" class="form-control" id="input16">
+                <input type="text" name="input" class="form-control" id="input17">
+                <input type="text" name="input" class="form-control" id="input18">
+              </div>
               <br>
-              <input type="text" name="input" class="form-control" id="input28">
-              <input type="text" name="input" class="form-control" id="input29">
-              <input type="text" name="input" class="form-control" id="input30">
-              <input type="text" name="input" class="form-control" id="input31">
-              <input type="text" name="input" class="form-control" id="input32">
-              <input type="text" name="input" class="form-control" id="input33">
-              <input type="text" name="input" class="form-control" id="input34">
-              <input type="text" name="input" class="form-control" id="input35">
-              <input type="text" name="input" class="form-control" id="input36">
               <br>
-              <input type="text" name="input" class="form-control" id="input37">
-              <input type="text" name="input" class="form-control" id="input38">
-              <input type="text" name="input" class="form-control" id="input39">
-              <input type="text" name="input" class="form-control" id="input40">
-              <input type="text" name="input" class="form-control" id="input41">
-              <input type="text" name="input" class="form-control" id="input42">
-              <input type="text" name="input" class="form-control" id="input43">
-              <input type="text" name="input" class="form-control" id="input44">
-              <input type="text" name="input" class="form-control" id="input45">
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input19">
+                <input type="text" name="input" class="form-control" id="input20">
+                <input type="text" name="input" class="form-control" id="input21">
+                <input type="text" name="input" class="form-control" id="input22">
+                <input type="text" name="input" class="form-control" id="input23">
+                <input type="text" name="input" class="form-control" id="input24">
+                <input type="text" name="input" class="form-control" id="input25">
+                <input type="text" name="input" class="form-control" id="input26">
+                <input type="text" name="input" class="form-control" id="input27">
+              </div>
               <br>
-              <input type="text" name="input" class="form-control" id="input46">
-              <input type="text" name="input" class="form-control" id="input47">
-              <input type="text" name="input" class="form-control" id="input48">
-              <input type="text" name="input" class="form-control" id="input49">
-              <input type="text" name="input" class="form-control" id="input50">
-              <input type="text" name="input" class="form-control" id="input51">
-              <input type="text" name="input" class="form-control" id="input52">
-              <input type="text" name="input" class="form-control" id="input53">
-              <input type="text" name="input" class="form-control" id="input54">
               <br>
-              <input type="text" name="input" class="form-control" id="input55">
-              <input type="text" name="input" class="form-control" id="input56">
-              <input type="text" name="input" class="form-control" id="input57">
-              <input type="text" name="input" class="form-control" id="input58">
-              <input type="text" name="input" class="form-control" id="input59">
-              <input type="text" name="input" class="form-control" id="input60">
-              <input type="text" name="input" class="form-control" id="input61">
-              <input type="text" name="input" class="form-control" id="input62">
-              <input type="text" name="input" class="form-control" id="input63">
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input28">
+                <input type="text" name="input" class="form-control" id="input29">
+                <input type="text" name="input" class="form-control" id="input30">
+                <input type="text" name="input" class="form-control" id="input31">
+                <input type="text" name="input" class="form-control" id="input32">
+                <input type="text" name="input" class="form-control" id="input33">
+                <input type="text" name="input" class="form-control" id="input34">
+                <input type="text" name="input" class="form-control" id="input35">
+                <input type="text" name="input" class="form-control" id="input36">
+              </div>
               <br>
-              <input type="text" name="input" class="form-control" id="input64">
-              <input type="text" name="input" class="form-control" id="input65">
-              <input type="text" name="input" class="form-control" id="input66">
-              <input type="text" name="input" class="form-control" id="input67">
-              <input type="text" name="input" class="form-control" id="input68">
-              <input type="text" name="input" class="form-control" id="input69">
-              <input type="text" name="input" class="form-control" id="input70">
-              <input type="text" name="input" class="form-control" id="input71">
-              <input type="text" name="input" class="form-control" id="input72">
               <br>
-              <input type="text" name="input" class="form-control" id="input73">
-              <input type="text" name="input" class="form-control" id="input74">
-              <input type="text" name="input" class="form-control" id="input75">
-              <input type="text" name="input" class="form-control" id="input76">
-              <input type="text" name="input" class="form-control" id="input77">
-              <input type="text" name="input" class="form-control" id="input78">
-              <input type="text" name="input" class="form-control" id="input79">
-              <input type="text" name="input" class="form-control" id="input80">
-              <input type="text" name="input" class="form-control" id="input81">
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input37">
+                <input type="text" name="input" class="form-control" id="input38">
+                <input type="text" name="input" class="form-control" id="input39">
+                <input type="text" name="input" class="form-control" id="input40">
+                <input type="text" name="input" class="form-control" id="input41">
+                <input type="text" name="input" class="form-control" id="input42">
+                <input type="text" name="input" class="form-control" id="input43">
+                <input type="text" name="input" class="form-control" id="input44">
+                <input type="text" name="input" class="form-control" id="input45">
+              </div>
+              <br>
+              <br>
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input46">
+                <input type="text" name="input" class="form-control" id="input47">
+                <input type="text" name="input" class="form-control" id="input48">
+                <input type="text" name="input" class="form-control" id="input49">
+                <input type="text" name="input" class="form-control" id="input50">
+                <input type="text" name="input" class="form-control" id="input51">
+                <input type="text" name="input" class="form-control" id="input52">
+                <input type="text" name="input" class="form-control" id="input53">
+                <input type="text" name="input" class="form-control" id="input54">
+              </div>
+              <br>
+              <br>
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input55">
+                <input type="text" name="input" class="form-control" id="input56">
+                <input type="text" name="input" class="form-control" id="input57">
+                <input type="text" name="input" class="form-control" id="input58">
+                <input type="text" name="input" class="form-control" id="input59">
+                <input type="text" name="input" class="form-control" id="input60">
+                <input type="text" name="input" class="form-control" id="input61">
+                <input type="text" name="input" class="form-control" id="input62">
+                <input type="text" name="input" class="form-control" id="input63">
+              </div>
+              <br>
+              <br>
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input64">
+                <input type="text" name="input" class="form-control" id="input65">
+                <input type="text" name="input" class="form-control" id="input66">
+                <input type="text" name="input" class="form-control" id="input67">
+                <input type="text" name="input" class="form-control" id="input68">
+                <input type="text" name="input" class="form-control" id="input69">
+                <input type="text" name="input" class="form-control" id="input70">
+                <input type="text" name="input" class="form-control" id="input71">
+                <input type="text" name="input" class="form-control" id="input72">
+              </div>
+              <br>
+              <br>
+              <div class="your-class">
+                <input type="text" name="input" class="form-control" id="input73">
+                <input type="text" name="input" class="form-control" id="input74">
+                <input type="text" name="input" class="form-control" id="input75">
+                <input type="text" name="input" class="form-control" id="input76">
+                <input type="text" name="input" class="form-control" id="input77">
+                <input type="text" name="input" class="form-control" id="input78">
+                <input type="text" name="input" class="form-control" id="input79">
+                <input type="text" name="input" class="form-control" id="input80">
+                <input type="text" name="input" class="form-control" id="input81">
+              </div>
+              <br>
         </div>
         <button type="submit" class="btn btn-danger">~Generate~</button>
       </form>
       <div id="result">
         <div class="box">
-          <h4> </h4>
+          <h4>Result</h4>
         </div>
       </div>
     </div>

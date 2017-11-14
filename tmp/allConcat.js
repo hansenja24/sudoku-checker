@@ -3,7 +3,7 @@ var Sudoku = require('./../js/sudoku.js').sudokuModule;
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-
+    var board = [];
     for(i = 1; i <= 81; i+=9)
     {
       var input1 = $("input#input"+i).val();
@@ -16,12 +16,12 @@ $(document).ready(function() {
       var input8 = $("input#input"+(i+7)).val();
       var input9 = $("input#input"+(i+8)).val();
 
-      var row+i = [input1, input2, input3, input4, input5, input6, input7, input8, input9];
+      board.push([input1, input2, input3, input4, input5, input6, input7, input8, input9]);
     }
 
       var simpleSudoku = new Sudoku();
 
-      var result = simpleSudoku.CheckAll(row1, row2, row3, row4, row5, row6, row7, row8, row9);
+      var result = simpleSudoku.CheckAll(board[0], board[1], board[2], board[3], board[4], board[5], board[6], board[7], board[8]);
 
       if(result == true)
       {

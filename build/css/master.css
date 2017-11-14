@@ -1,0 +1,15 @@
+.formOne {
+  height: 20px;
+}
+
+input[type="text"]{
+  width:40px;
+}
+
+body{
+  background-color: lightgrey;
+}
+
+.your-class input{
+  float:left;
+}
